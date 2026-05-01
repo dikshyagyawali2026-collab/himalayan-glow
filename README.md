@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Himalayan Herbal Care | Story of Nature & Skin</title>
+<title>Himalayan Herbal Care | Nepal</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
@@ -17,7 +17,7 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#e8f5e9,#fefae0);
+background:#f5faf5;
 color:#1b4332;
 }
 
@@ -27,17 +27,17 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:18px 50px;
-background:rgba(255,255,255,0.7);
-backdrop-filter:blur(12px);
+background:rgba(255,255,255,0.75);
+backdrop-filter:blur(10px);
 position:sticky;
 top:0;
 z-index:10;
-box-shadow:0 3px 10px rgba(0,0,0,0.08);
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
 .navbar h2{
-color:#2d6a4f;
 font-family:'Playfair Display',serif;
+color:#2d6a4f;
 }
 
 .navbar a{
@@ -49,16 +49,17 @@ font-weight:500;
 
 /* HERO */
 .hero{
-height:90vh;
-background:url('https://images.unsplash.com/photo-1612810436541-336d3b1c8b6b?auto=format&fit=crop&w=1600&q=80') center/cover;
+height:92vh;
+background:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
 position:relative;
-text-align:center;
 color:white;
+text-align:center;
 }
 
+/* DARK OVERLAY */
 .hero::after{
 content:'';
 position:absolute;
@@ -71,16 +72,35 @@ background:rgba(0,0,0,0.45);
 .hero-content{
 position:relative;
 max-width:800px;
+padding:20px;
 }
 
 .hero h1{
-font-size:44px;
+font-size:48px;
 font-family:'Playfair Display',serif;
 margin-bottom:10px;
 }
 
 .hero p{
 font-size:16px;
+opacity:0.9;
+}
+
+/* BUTTON */
+.btn{
+margin-top:20px;
+display:inline-block;
+padding:12px 25px;
+background:#52b788;
+color:white;
+text-decoration:none;
+border-radius:25px;
+font-weight:500;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#2d6a4f;
 }
 
 /* STORY */
@@ -96,29 +116,23 @@ font-family:'Playfair Display',serif;
 margin-bottom:20px;
 }
 
-.story p{
-line-height:1.7;
-color:#3a5a40;
-}
-
 /* PRODUCTS */
 .section-title{
 text-align:center;
 margin-top:40px;
-font-size:28px;
+font-size:30px;
 font-family:'Playfair Display',serif;
 }
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:25px;
 padding:50px 40px;
 max-width:1200px;
 margin:auto;
 }
 
-/* CARD */
 .product{
 background:white;
 border-radius:15px;
@@ -155,10 +169,6 @@ padding:60px 20px;
 text-align:center;
 }
 
-.contact p{
-margin:6px 0;
-}
-
 /* FOOTER */
 footer{
 background:#081c15;
@@ -178,34 +188,32 @@ font-size:14px;
 <h2>Himalayan Herbal</h2>
 <div>
 <a href="#">Home</a>
-<a href="#story">Story</a>
 <a href="#products">Products</a>
 <a href="#contact">Contact</a>
 </div>
 </div>
 
-<!-- HERO -->
+<!-- HERO SECTION (FIXED - GIRL AD IMAGE) -->
 <div class="hero">
 <div class="hero-content">
-<h1>Nature, Tradition & Beauty from Nepal 🇳🇵</h1>
-<p>Herbal skincare crafted from Himalayan ingredients for pure, healthy skin</p>
+<h1>Glow Naturally with Himalayan Herbal</h1>
+<p>Pure skincare inspired by nature, trusted by women across Nepal</p>
+<a href="#products" class="btn">Explore Products</a>
 </div>
 </div>
 
 <!-- STORY -->
-<div class="story" id="story">
+<div class="story">
 <h2>Our Story</h2>
 <p>
-Himalayan Herbal was born in the heart of Nepal with a simple belief —
-nature already has everything your skin needs.
-We combine Himalayan herbs, Ayurvedic wisdom, and modern skincare science
-to create products that are pure, safe, and effective.
+We create herbal skincare using Himalayan ingredients that nourish your skin naturally.
+Our goal is simple — pure beauty without chemicals.
 </p>
 </div>
 
-<h2 class="section-title">Our Herbal Collection</h2>
-
 <!-- PRODUCTS -->
+<h2 class="section-title">Best Selling Products</h2>
+
 <div class="products" id="products">
 
 <div class="product">
@@ -227,33 +235,9 @@ to create products that are pure, safe, and effective.
 </div>
 
 <div class="product">
-<img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=800&q=80">
-<h3>Glow Serum</h3>
-<p>Rs 899</p>
-</div>
-
-<div class="product">
 <img src="https://images.unsplash.com/photo-1616401784845-180882ba9ba3?auto=format&fit=crop&w=800&q=80">
-<h3>Herbal Shampoo</h3>
+<h3>Shampoo</h3>
 <p>Rs 699</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=80">
-<h3>Body Lotion</h3>
-<p>Rs 599</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1604908554025-91c4a8f1b1f5?auto=format&fit=crop&w=800&q=80">
-<h3>Herbal Soap</h3>
-<p>Rs 199</p>
-</div>
-
-<div class="product">
-<img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=800&q=80">
-<h3>Natural Perfume</h3>
-<p>Rs 999</p>
 </div>
 
 </div>
@@ -263,7 +247,7 @@ to create products that are pure, safe, and effective.
 <h2>Contact Us</h2>
 <p>Email: contact@himalayanherbal.com</p>
 <p>Phone: 9847000007</p>
-<p>Location: Kathmandu, Nepal</p>
+<p>Kathmandu, Nepal</p>
 </div>
 
 <!-- FOOTER -->
