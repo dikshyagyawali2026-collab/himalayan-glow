@@ -21,6 +21,7 @@ font-family:'Poppins',sans-serif;
 body{
 background:#f4f7f3;
 color:#2e3d2f;
+line-height:1.6;
 }
 
 /* HEADER */
@@ -52,7 +53,7 @@ color:#c8e6c9;
 /* HERO */
 .hero{
 height:90vh;
-background:url('https://images.unsplash.com/photo-1608571423539-e951a9b3871b?auto=format&fit=crop&w=1600&q=80') center/cover;
+background:url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1600&q=80') center/cover;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -62,8 +63,9 @@ color:white;
 
 .hero h2{
 font-size:50px;
-background:rgba(0,0,0,0.4);
-padding:20px;
+background:rgba(0,0,0,0.45);
+padding:25px;
+border-radius:10px;
 }
 
 /* SECTION */
@@ -86,14 +88,14 @@ gap:30px;
 
 .card{
 background:white;
-border-radius:10px;
+border-radius:12px;
 overflow:hidden;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+box-shadow:0 6px 15px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-10px);
 }
 
 .card img{
@@ -108,6 +110,7 @@ padding:15px;
 
 .card-content h3{
 margin-bottom:10px;
+font-size:18px;
 }
 
 /* ABOUT */
@@ -133,7 +136,7 @@ flex-direction:column;
 margin-bottom:15px;
 padding:12px;
 border:none;
-border-radius:5px;
+border-radius:6px;
 }
 
 .contact button{
@@ -143,6 +146,7 @@ border:none;
 cursor:pointer;
 color:white;
 font-weight:bold;
+border-radius:6px;
 }
 
 /* FOOTER */
@@ -151,6 +155,7 @@ background:#10251a;
 color:white;
 text-align:center;
 padding:20px;
+font-size:14px;
 }
 
 </style>
@@ -181,57 +186,57 @@ padding:20px;
 
 <div class="products">
 
-<!-- PRODUCT 1 -->
+<!-- Aloe Vera Cream -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1625772299848-391b6a87d0f2?auto=format&fit=crop&w=800&q=80" alt="Aloe Vera Cream">
 <div class="card-content">
 <h3>Aloe Vera Face Cream</h3>
-<p>Deep hydration with natural aloe extracts.</p>
+<p>Deep hydration with soothing aloe extracts.</p>
 </div>
 </div>
 
-<!-- PRODUCT 2 -->
+<!-- Neem Face Wash -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Face Wash">
 <div class="card-content">
 <h3>Neem Face Wash</h3>
-<p>Anti-acne herbal cleanser.</p>
+<p>Herbal cleanser for clear, acne-free skin.</p>
 </div>
 </div>
 
-<!-- PRODUCT 3 -->
+<!-- Vitamin C Serum (Dropper Style) -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=800&q=80" alt="Serum Bottle">
 <div class="card-content">
 <h3>Vitamin C Serum</h3>
-<p>Brightens and smoothens skin tone.</p>
+<p>Dropper-based serum for glowing, radiant skin.</p>
 </div>
 </div>
 
-<!-- PRODUCT 4 -->
+<!-- Body Lotion -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=800&q=80" alt="Lotion">
 <div class="card-content">
 <h3>Herbal Body Lotion</h3>
-<p>Soft and nourished skin all day.</p>
+<p>Soft, nourished skin with natural oils.</p>
 </div>
 </div>
 
-<!-- PRODUCT 5 -->
+<!-- Beard Oil -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Beard Oil">
 <div class="card-content">
 <h3>Beard Oil</h3>
-<p>Natural oils for smooth beard care.</p>
+<p>Premium grooming oil for men.</p>
 </div>
 </div>
 
-<!-- PRODUCT 6 -->
+<!-- Perfume -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=800&q=80" alt="Perfume">
 <div class="card-content">
 <h3>Herbal Perfume</h3>
-<p>Fresh natural fragrance.</p>
+<p>Natural fragrance inspired by Himalayan herbs.</p>
 </div>
 </div>
 
@@ -242,9 +247,9 @@ padding:20px;
 <section class="section about" id="about">
 <h2>About Us</h2>
 <p>
-Himalayan Herbal is a Nepal-based brand dedicated to natural skincare,
-grooming, and self-care products. Our ingredients are sourced from the
-Himalayan region, ensuring purity, sustainability, and authenticity.
+Himalayan Herbal is a Nepal-based skincare and grooming brand focused on
+natural, eco-friendly, and herbal products. We combine traditional Himalayan
+ingredients with modern skincare science.
 </p>
 </section>
 
@@ -260,15 +265,16 @@ Himalayan region, ensuring purity, sustainability, and authenticity.
 </form>
 
 <p style="text-align:center; margin-top:20px;">
-Email: contact@himalayanherbal.com <br>
-Location: Kathmandu, Nepal
+📧 Email: contact@himalayanherbal.com <br>
+📞 Contact: 9847000007 <br>
+📍 Kathmandu, Nepal
 </p>
 
 </section>
 
 <!-- FOOTER -->
 <footer>
-<p>© 2026 Himalayan Herbal | Nepal</p>
+<p>© 2026 Himalayan Herbal | Made with ❤️ in Nepal 🇳🇵</p>
 </footer>
 
 </body>
