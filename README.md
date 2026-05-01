@@ -4,254 +4,201 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Himalayan Herbal Care | Nepal</title>
+<title>Himalayan Herbal | Nepal</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-/* RESET */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+body{background:#f4f7f3;color:#2e3d2f;}
 
-body{
-background:#f5f8f5;
-color:#2f3e2f;
-}
-
-/* HEADER */
 header{
 display:flex;
 justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:#1b4332;
+padding:20px 50px;
+background:#1f3d2b;
 color:white;
-}
-
-header h1{
-font-family:'Playfair Display',serif;
 }
 
 nav a{
-margin-left:25px;
-text-decoration:none;
+margin-left:20px;
 color:white;
+text-decoration:none;
 }
 
-nav a:hover{
-color:#a7c957;
-}
-
-/* HERO */
 .hero{
-height:85vh;
-background:url('https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1600&q=80') center/cover;
+height:80vh;
+background:url('https://images.pexels.com/photos/6621461/pexels-photo-6621461.jpeg') center/cover;
 display:flex;
 align-items:center;
 justify-content:center;
 color:white;
-text-align:center;
 }
 
-.hero h2{
-font-size:48px;
-background:rgba(0,0,0,0.4);
+.hero h1{
+background:rgba(0,0,0,0.5);
 padding:20px;
 border-radius:10px;
 }
 
-/* SECTION */
-.section{
-padding:60px;
-}
+.section{padding:60px;}
 
-.section h2{
-text-align:center;
-margin-bottom:40px;
-font-family:'Playfair Display',serif;
-}
+.section h2{text-align:center;margin-bottom:30px;}
 
-/* PRODUCTS */
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+gap:25px;
 }
 
 .card{
 background:white;
-border-radius:12px;
+border-radius:10px;
 overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 transition:0.3s;
 }
 
-.card:hover{
-transform:translateY(-10px);
-}
+.card:hover{transform:translateY(-8px);}
 
 .card img{
 width:100%;
-height:260px;
+height:250px;
 object-fit:cover;
 }
 
-.card-content{
-padding:15px;
-}
+.card-content{padding:15px;}
 
-.card-content h3{
-margin-bottom:10px;
-}
-
-/* ABOUT */
-.about{
-background:#e9f5ec;
-text-align:center;
+.price{
+color:#1b5e20;
+font-weight:bold;
+margin-top:8px;
 }
 
 /* CONTACT */
-.contact{
-background:#1b4332;
-color:white;
-}
+.contact{background:#1f3d2b;color:white;}
 
 .contact form{
-max-width:600px;
+max-width:500px;
 margin:auto;
 display:flex;
 flex-direction:column;
 }
 
-.contact input, .contact textarea{
-margin-bottom:15px;
-padding:12px;
+.contact input,.contact textarea{
+margin-bottom:10px;
+padding:10px;
 border:none;
-border-radius:6px;
+border-radius:5px;
 }
 
 .contact button{
-padding:12px;
-background:#52b788;
+padding:10px;
+background:#66bb6a;
 border:none;
 color:white;
-font-weight:bold;
 cursor:pointer;
 }
 
 /* FOOTER */
 footer{
-background:#081c15;
+background:#000;
 color:white;
 text-align:center;
 padding:20px;
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Himalayan Herbal</h1>
+<h2>Himalayan Herbal</h2>
 <nav>
 <a href="#">Home</a>
 <a href="#products">Products</a>
-<a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <section class="hero">
-<h2>Nature’s Touch for Your Skin & Hair</h2>
+<h1>Pure Herbal Skincare from Nepal</h1>
 </section>
 
 <section class="section" id="products">
-<h2>Our Herbal Collection</h2>
+<h2>Our Products</h2>
 
 <div class="products">
 
-<!-- Face Wash -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1585238342028-78d387f4a707?auto=format&fit=crop&w=800&q=80" alt="Face Wash">
+<img src="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg">
 <div class="card-content">
 <h3>Herbal Face Wash</h3>
-<p>Gentle daily cleanser with neem and tulsi.</p>
+<p>Gentle neem & tulsi cleanser</p>
+<p class="price">Rs 399</p>
 </div>
 </div>
 
-<!-- Serum -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1629198735660-e39ea93f5f5d?auto=format&fit=crop&w=800&q=80" alt="Serum">
+<img src="https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg">
 <div class="card-content">
 <h3>Vitamin C Serum</h3>
-<p>Dropper-based serum for radiant glowing skin.</p>
+<p>Brightening glow serum</p>
+<p class="price">Rs 799</p>
 </div>
 </div>
 
-<!-- Moisturizer -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1611930021592-a8cfd5319ceb?auto=format&fit=crop&w=800&q=80" alt="Moisturizer">
+<img src="https://images.pexels.com/photos/6621460/pexels-photo-6621460.jpeg">
 <div class="card-content">
 <h3>Herbal Moisturizer</h3>
-<p>Deep hydration with natural plant extracts.</p>
+<p>Deep hydration cream</p>
+<p class="price">Rs 599</p>
 </div>
 </div>
 
-<!-- Shampoo -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=800&q=80" alt="Shampoo">
+<img src="https://images.pexels.com/photos/3738347/pexels-photo-3738347.jpeg">
 <div class="card-content">
 <h3>Herbal Shampoo</h3>
-<p>Strengthens hair and reduces hair fall.</p>
+<p>Hair strengthening formula</p>
+<p class="price">Rs 699</p>
 </div>
 </div>
 
-<!-- Soap -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1604908554025-91c4a8f1b1f5?auto=format&fit=crop&w=800&q=80" alt="Soap">
+<img src="https://images.pexels.com/photos/6621338/pexels-photo-6621338.jpeg">
 <div class="card-content">
 <h3>Organic Soap</h3>
-<p>Handmade soap with essential oils.</p>
+<p>Handmade essential oil soap</p>
+<p class="price">Rs 199</p>
 </div>
 </div>
 
-<!-- Hair Oil -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Hair Oil">
+<img src="https://images.pexels.com/photos/6621463/pexels-photo-6621463.jpeg">
 <div class="card-content">
 <h3>Herbal Hair Oil</h3>
-<p>Promotes healthy and shiny hair.</p>
+<p>Strong & healthy hair care</p>
+<p class="price">Rs 499</p>
 </div>
 </div>
 
 </div>
-</section>
-
-<section class="section about" id="about">
-<h2>About Us</h2>
-<p>
-Himalayan Herbal is a Nepal-based brand creating natural skincare,
-haircare, and grooming products using Himalayan herbs.
-</p>
 </section>
 
 <section class="section contact" id="contact">
 <h2>Contact Us</h2>
 
 <form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea rows="5" placeholder="Message"></textarea>
-<button type="submit">Send Message</button>
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea placeholder="Message"></textarea>
+<button>Send Message</button>
 </form>
 
-<p style="text-align:center; margin-top:20px;">
+<p style="text-align:center;margin-top:15px;">
 📧 contact@himalayanherbal.com <br>
 📞 9847000007 <br>
 📍 Kathmandu, Nepal
