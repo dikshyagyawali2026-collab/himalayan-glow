@@ -235,3 +235,64 @@
 
 </body>
 </html>
+<section class="section" id="products">
+    <h2>Our Products</h2>
+
+    <div class="products">
+
+        <!-- Face Cream -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?auto=format&fit=crop&w=800&q=80" alt="Face Cream">
+            <div class="card-content">
+                <h3>Organic Face Cream</h3>
+                <p>Hydrating cream made with natural Himalayan ingredients.</p>
+            </div>
+        </div>
+
+        <!-- Face Wash -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80" alt="Face Wash">
+            <div class="card-content">
+                <h3>Herbal Face Wash</h3>
+                <p>Gentle cleanser for glowing skin.</p>
+            </div>
+        </div>
+
+        <!-- Serum -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&w=800&q=80" alt="Serum">
+            <div class="card-content">
+                <h3>Vitamin C Serum</h3>
+                <p>Brightens and revitalizes your skin.</p>
+            </div>
+        </div>
+
+        <!-- Perfume -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=800&q=80" alt="Perfume">
+            <div class="card-content">
+                <h3>Natural Perfume</h3>
+                <p>Long-lasting fragrance inspired by nature.</p>
+            </div>
+        </div>
+
+        <!-- Grooming Kit -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Grooming Kit">
+            <div class="card-content">
+                <h3>Men's Grooming Kit</h3>
+                <p>Everything you need for daily grooming.</p>
+            </div>
+        </div>
+
+        <!-- Lotion -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=800&q=80" alt="Body Lotion">
+            <div class="card-content">
+                <h3>Body Lotion</h3>
+                <p>Keeps your skin soft and moisturized.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
