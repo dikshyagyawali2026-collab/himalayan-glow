@@ -1,32 +1,39 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Himalayan Herbal | Nepal</title>
+<title>Himalayan Herbal</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 <style>
+
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-body{background:#f4f7f3;color:#2e3d2f;}
+body{background:#f9f9f9;}
 
-header{
+/* NAVBAR */
+.navbar{
 display:flex;
 justify-content:space-between;
 padding:20px 50px;
-background:#1f3d2b;
-color:white;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
 }
 
-nav a{
+.navbar h2{color:#2d6a4f;}
+
+.navbar a{
 margin-left:20px;
-color:white;
 text-decoration:none;
+color:#333;
 }
 
+/* HERO */
 .hero{
 height:80vh;
 background:url('https://images.pexels.com/photos/6621461/pexels-photo-6621461.jpeg') center/cover;
@@ -34,180 +41,128 @@ display:flex;
 align-items:center;
 justify-content:center;
 color:white;
+text-align:center;
 }
 
 .hero h1{
 background:rgba(0,0,0,0.5);
 padding:20px;
-border-radius:10px;
 }
 
-.section{padding:60px;}
-
-.section h2{text-align:center;margin-bottom:30px;}
+/* SECTION */
+.section{
+padding:60px 40px;
+text-align:center;
+}
 
 .products{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
 }
 
-.card{
+.product{
 background:white;
+padding:15px;
 border-radius:10px;
-overflow:hidden;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-transition:0.3s;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
 }
 
-.card:hover{transform:translateY(-8px);}
-
-.card img{
+.product img{
 width:100%;
-height:250px;
+height:200px;
 object-fit:cover;
+border-radius:10px;
 }
-
-.card-content{padding:15px;}
 
 .price{
-color:#1b5e20;
+color:green;
 font-weight:bold;
-margin-top:8px;
+margin-top:5px;
 }
 
 /* CONTACT */
-.contact{background:#1f3d2b;color:white;}
-
-.contact form{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-}
-
-.contact input,.contact textarea{
-margin-bottom:10px;
-padding:10px;
-border:none;
-border-radius:5px;
-}
-
-.contact button{
-padding:10px;
-background:#66bb6a;
-border:none;
+.contact{
+background:#2d6a4f;
 color:white;
-cursor:pointer;
+padding:50px;
+text-align:center;
 }
 
 /* FOOTER */
 footer{
-background:#000;
+background:#111;
 color:white;
 text-align:center;
-padding:20px;
+padding:15px;
 }
+
 </style>
 </head>
 
 <body>
 
-<header>
+<!-- NAVBAR -->
+<div class="navbar">
 <h2>Himalayan Herbal</h2>
-<nav>
+<div>
 <a href="#">Home</a>
 <a href="#products">Products</a>
 <a href="#contact">Contact</a>
-</nav>
-</header>
+</div>
+</div>
 
-<section class="hero">
-<h1>Pure Herbal Skincare from Nepal</h1>
-</section>
+<!-- HERO -->
+<div class="hero">
+<h1>Natural Skincare from Nepal</h1>
+</div>
 
-<section class="section" id="products">
+<!-- PRODUCTS -->
+<div class="section" id="products">
 <h2>Our Products</h2>
 
 <div class="products">
 
-<div class="card">
+<div class="product">
 <img src="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg">
-<div class="card-content">
-<h3>Herbal Face Wash</h3>
-<p>Gentle neem & tulsi cleanser</p>
-<p class="price">Rs 399</p>
-</div>
+<h3>Face Wash</h3>
+<p>Rs 399</p>
 </div>
 
-<div class="card">
+<div class="product">
 <img src="https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg">
-<div class="card-content">
-<h3>Vitamin C Serum</h3>
-<p>Brightening glow serum</p>
-<p class="price">Rs 799</p>
-</div>
+<h3>Serum</h3>
+<p>Rs 799</p>
 </div>
 
-<div class="card">
+<div class="product">
 <img src="https://images.pexels.com/photos/6621460/pexels-photo-6621460.jpeg">
-<div class="card-content">
-<h3>Herbal Moisturizer</h3>
-<p>Deep hydration cream</p>
-<p class="price">Rs 599</p>
-</div>
+<h3>Moisturizer</h3>
+<p>Rs 599</p>
 </div>
 
-<div class="card">
+<div class="product">
 <img src="https://images.pexels.com/photos/3738347/pexels-photo-3738347.jpeg">
-<div class="card-content">
-<h3>Herbal Shampoo</h3>
-<p>Hair strengthening formula</p>
-<p class="price">Rs 699</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/6621338/pexels-photo-6621338.jpeg">
-<div class="card-content">
-<h3>Organic Soap</h3>
-<p>Handmade essential oil soap</p>
-<p class="price">Rs 199</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.pexels.com/photos/6621463/pexels-photo-6621463.jpeg">
-<div class="card-content">
-<h3>Herbal Hair Oil</h3>
-<p>Strong & healthy hair care</p>
-<p class="price">Rs 499</p>
-</div>
+<h3>Shampoo</h3>
+<p>Rs 699</p>
 </div>
 
 </div>
-</section>
 
-<section class="section contact" id="contact">
+</div>
+
+<!-- CONTACT -->
+<div class="contact" id="contact">
 <h2>Contact Us</h2>
+<p>Email: contact@himalayanherbal.com</p>
+<p>Phone: 9847000007</p>
+<p>Kathmandu, Nepal</p>
+</div>
 
-<form>
-<input type="text" placeholder="Your Name">
-<input type="email" placeholder="Your Email">
-<textarea placeholder="Message"></textarea>
-<button>Send Message</button>
-</form>
-
-<p style="text-align:center;margin-top:15px;">
-📧 contact@himalayanherbal.com <br>
-📞 9847000007 <br>
-📍 Kathmandu, Nepal
-</p>
-
-</section>
-
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Himalayan Herbal | Made with ❤️ in Nepal 🇳🇵</p>
+<p>Made with ❤️ in Nepal 🇳🇵</p>
 </footer>
 
 </body>
